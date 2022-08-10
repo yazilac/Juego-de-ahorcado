@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JUEGO DE AHORCADO</title>
+        <link rel="icon" href="icono/verdugo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css" >
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Montserrat:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://kit.fontawesome.com/b05af6aa7e.js" ></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Juego de Ahorcado</h1>
+        </header>
+        <main>
+            <img id="imagen" src="imagenes/img0.png"  alt="horca">
+            <div class="contenedor">
+                <p id="palabraAdividar">
+                </p>
+                <p id="resultado"></p>
+                <div class="teclado" >
+                    <button class="letras" >a</button>
+                    <button class="letras" >b</button>
+                    <button class="letras" >c</button>
+                    <button class="letras" >d</button>
+                    <button class="letras" >e</button>
+                    <button class="letras" >f</button>
+                    <button class="letras" >g</button>
+                    <button class="letras" >h</button>
+                    <button class="letras" >i</button>
+                    <button class="letras" >j</button>
+                    <button class="letras" >k</button>
+                    <button class="letras" >l</button>
+                    <button class="letras" >m</button>
+                    <button class="letras" >n</button>
+                    <button class="letras" >ñ</button>
+                    <button class="letras" >o</button>
+                    <button class="letras" >p</button>
+                    <button class="letras" >q</button>
+                    <button class="letras" >r</button>
+                    <button class="letras" >s</button>
+                    <button class="letras" >t</button>
+                    <button class="letras" >u</button>
+                    <button class="letras" >v</button>
+                    <button class="letras" >w</button>
+                    <button class="letras" >x</button>
+                    <button class="letras" >y</button>
+                    <button class="letras" >z</button>
+                    <button class="letras" id="start">Empezar Juego</button>
+                </div>            
+            </div>  
+            <div class="botones">
+                <button class="boton" id="nuevo" disabled="true">Cambiar Palabra</button>
+                <button class="boton" id="nuevaPalabra">Agregar Palabra</button>
+            </div>
+        </main>
+        <div class="overlay" >
+            <div class="popUp">
+                <a id="btn-Cerrar" class="btn-Cerrar-popUp"><i class="fas fa-times"></i></a>
+                <h3>Agregar Nueva Palabra</h3>
+                <form id="formulario">
+                    <div class="inputs">
+                        <input type="text" class="nuevaPalabras" placeholder="Nueva Palabra" onkeypress="return validarLetras(event)">
+                    </div>
+                </form>
+                <input type="reset" value="Guardar" class="boton" id="nuevas">
+            </div>
+        </div>
+        <footer>
+            <p class="copyright">&copy Copyright Challenge Alura YazminIlamaCastro-2022</p>
+        </footer>
+		<script src="script.js"></script> 
+    </body>
+</html>
